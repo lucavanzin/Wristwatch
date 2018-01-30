@@ -1,0 +1,712 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Luca\AppData\Local\Temp\s480.obj
+init CODE 0 0 0 4 1
+config CONFIG 0 FFF8 FFF8 8 1
+$dist/default/production\OrologioDaPolso.X.production.obj
+cinit CODE 0 12C0 12C0 16 1
+text0 CODE 0 FF0 FF0 D4 1
+text1 CODE 0 1254 1254 26 1
+text2 CODE 0 127A 127A 26 1
+text3 CODE 0 12E4 12E4 A 1
+text4 CODE 0 12F8 12F8 8 1
+text5 CODE 0 12EE 12EE A 1
+text6 CODE 0 12A0 12A0 20 1
+text7 CODE 0 1156 1156 82 1
+text8 CODE 0 10C4 10C4 92 1
+text9 CODE 0 12D6 12D6 E 1
+nvCOMRAM COMRAM 1 1D 1D 4 1
+text10 CODE 0 F12 F12 DE 1
+text11 CODE 0 1300 1300 4 1
+text12 CODE 0 1304 1304 4 1
+text13 CODE 0 1308 1308 4 1
+text14 CODE 0 130C 130C 4 1
+text15 CODE 0 11D8 11D8 2C 1
+text16 CODE 0 1204 1204 28 1
+text17 CODE 0 122C 122C 28 1
+cstackCOMRAM COMRAM 1 1 1 F 1
+smallconst SMALLCONST 0 F00 F00 12 1
+bssCOMRAM COMRAM 1 10 10 D 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-EBF 1
+SFR EC0-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-EFF 1
+CONST 1310-FFF7 1
+STACK 60-EBF 1
+SMALLCONST 1310-FFF7 1
+CODE 4-EFF 1
+CODE 1310-FFF7 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EBF 1
+BIGRAM 21-EBF 1
+COMRAM 21-5F 1
+MEDIUMCONST 1310-FFF7 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\OrologioDaPolso.X.production.obj
+122C text17 CODE >153:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+122E text17 CODE >155:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1230 text17 CODE >158:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1232 text17 CODE >159:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1234 text17 CODE >161:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1236 text17 CODE >162:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1238 text17 CODE >164:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+123A text17 CODE >165:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+123C text17 CODE >167:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+123E text17 CODE >168:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1240 text17 CODE >155:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1252 text17 CODE >173:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1204 text16 CODE >132:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1206 text16 CODE >134:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1208 text16 CODE >137:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+120A text16 CODE >138:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+120C text16 CODE >140:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+120E text16 CODE >141:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1210 text16 CODE >143:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1212 text16 CODE >144:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1214 text16 CODE >146:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1216 text16 CODE >147:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1218 text16 CODE >134:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+122A text16 CODE >151:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+11D8 text15 CODE >109:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+11DA text15 CODE >111:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+11DE text15 CODE >112:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+11E2 text15 CODE >113:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+11E2 text15 CODE >114:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+11E4 text15 CODE >115:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+11E8 text15 CODE >116:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+11EC text15 CODE >117:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+11EC text15 CODE >118:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+11EE text15 CODE >119:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+11F2 text15 CODE >120:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+11F6 text15 CODE >121:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+11F6 text15 CODE >122:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+11F8 text15 CODE >123:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+11FC text15 CODE >124:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1200 text15 CODE >125:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1200 text15 CODE >126:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1202 text15 CODE >128:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+130C text14 CODE >302:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+130C text14 CODE >304:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+130E text14 CODE >305:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1308 text13 CODE >306:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1308 text13 CODE >308:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+130A text13 CODE >309:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1304 text12 CODE >310:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1304 text12 CODE >312:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1306 text12 CODE >313:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1300 text11 CODE >314:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1300 text11 CODE >316:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1302 text11 CODE >317:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+F12 text10 CODE >79:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+F12 text10 CODE >81:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+F1A text10 CODE >87:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+F20 text10 CODE >88:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+F38 text10 CODE >89:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+F3E text10 CODE >90:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+F42 text10 CODE >91:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+F46 text10 CODE >93:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+F4A text10 CODE >96:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+F50 text10 CODE >97:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+F68 text10 CODE >98:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+F6E text10 CODE >99:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+F74 text10 CODE >105:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+F7A text10 CODE >106:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+F92 text10 CODE >107:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+F98 text10 CODE >108:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+F9E text10 CODE >114:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+FA4 text10 CODE >115:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+FBC text10 CODE >116:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+FC2 text10 CODE >117:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+FC8 text10 CODE >84:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+FD8 text10 CODE >125:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+FE4 text10 CODE >126:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+FE6 text10 CODE >127:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+FEC text10 CODE >128:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+FEE text10 CODE >130:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+12D6 text9 CODE >8:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+12D6 text9 CODE >11:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+12D8 text9 CODE >12:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+12DA text9 CODE >13:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+12DC text9 CODE >14:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+12DE text9 CODE >15:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+12E0 text9 CODE >16:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+12E2 text9 CODE >18:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+10C4 text8 CODE >45:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+10C4 text8 CODE >47:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+10CA text8 CODE >48:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+10CE text8 CODE >49:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+10D2 text8 CODE >50:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+10D4 text8 CODE >51:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+10E6 text8 CODE >52:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+10E8 text8 CODE >53:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+10F2 text8 CODE >54:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+10F8 text8 CODE >55:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+1102 text8 CODE >56:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+110A text8 CODE >57:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+1114 text8 CODE >58:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+111C text8 CODE >59:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+111E text8 CODE >66:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+1156 text7 CODE >261:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1158 text7 CODE >263:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+115C text7 CODE >264:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+115E text7 CODE >265:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1160 text7 CODE >266:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1162 text7 CODE >267:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1164 text7 CODE >268:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+116C text7 CODE >272:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1170 text7 CODE >273:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1172 text7 CODE >270:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1178 text7 CODE >275:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1182 text7 CODE >276:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1184 text7 CODE >278:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1186 text7 CODE >279:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1188 text7 CODE >276:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+118C text7 CODE >281:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+1196 text7 CODE >284:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+119E text7 CODE >288:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+11A2 text7 CODE >289:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+11A4 text7 CODE >286:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+11AA text7 CODE >291:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+11B4 text7 CODE >292:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+11B6 text7 CODE >294:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+11B8 text7 CODE >295:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+11BA text7 CODE >292:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+11BE text7 CODE >297:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+11C8 text7 CODE >300:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+12A0 text6 CODE >89:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+12A2 text6 CODE >91:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+12A6 text6 CODE >92:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+12AA text6 CODE >93:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+12AA text6 CODE >94:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+12AC text6 CODE >95:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+12B0 text6 CODE >96:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+12B4 text6 CODE >97:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+12B4 text6 CODE >98:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+12B6 text6 CODE >100:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+12BE text6 CODE >101:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+12EE text5 CODE >71:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+12EE text5 CODE >73:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+12F6 text5 CODE >74:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+12F8 text4 CODE >103:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+12F8 text4 CODE >105:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+12FC text4 CODE >106:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+12FE text4 CODE >107:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+12E4 text3 CODE >67:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+12E4 text3 CODE >69:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+12EC text3 CODE >70:Y:\Elettronica\Progetti\OrologioDaPolso.X\Display.c
+127A text2 CODE >75:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+127A text2 CODE >77:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+127E text2 CODE >78:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1282 text2 CODE >79:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1286 text2 CODE >80:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+128A text2 CODE >81:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+128E text2 CODE >82:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1290 text2 CODE >83:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1294 text2 CODE >84:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1298 text2 CODE >85:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+129C text2 CODE >86:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+129E text2 CODE >87:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1254 text1 CODE >31:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+1254 text1 CODE >33:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+1258 text1 CODE >34:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+125C text1 CODE >35:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+1260 text1 CODE >36:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+1264 text1 CODE >37:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+1268 text1 CODE >38:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+126C text1 CODE >39:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+1270 text1 CODE >40:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+1276 text1 CODE >41:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+1278 text1 CODE >42:Y:\Elettronica\Progetti\OrologioDaPolso.X\RTCC.c
+FF0 text0 CODE >131:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+FF0 text0 CODE >132:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+FF4 text0 CODE >133:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+FF8 text0 CODE >134:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1004 text0 CODE >135:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1010 text0 CODE >136:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1014 text0 CODE >137:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1016 text0 CODE >138:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+101A text0 CODE >139:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1020 text0 CODE >141:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1024 text0 CODE >142:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1028 text0 CODE >148:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+102E text0 CODE >150:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1036 text0 CODE >153:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+103C text0 CODE >154:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1040 text0 CODE >156:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+104E text0 CODE >158:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+105C text0 CODE >159:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1062 text0 CODE >160:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1066 text0 CODE >161:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+106A text0 CODE >162:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+106A text0 CODE >163:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+106C text0 CODE >164:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1070 text0 CODE >165:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1074 text0 CODE >166:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1074 text0 CODE >167:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1076 text0 CODE >169:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+107C text0 CODE >171:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1084 text0 CODE >172:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1088 text0 CODE >175:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+1090 text0 CODE >176:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+109A text0 CODE >177:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+109E text0 CODE >178:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+10AC text0 CODE >179:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+10B0 text0 CODE >181:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+10B4 text0 CODE >182:Y:\Elettronica\Progetti\OrologioDaPolso.X\main.c
+12C0 cinit CODE >1596:C:\Users\Luca\AppData\Local\Temp\s480.
+12C0 cinit CODE >1598:C:\Users\Luca\AppData\Local\Temp\s480.
+12C0 cinit CODE >1601:C:\Users\Luca\AppData\Local\Temp\s480.
+12C0 cinit CODE >1631:C:\Users\Luca\AppData\Local\Temp\s480.
+12C4 cinit CODE >1632:C:\Users\Luca\AppData\Local\Temp\s480.
+12C6 cinit CODE >1633:C:\Users\Luca\AppData\Local\Temp\s480.
+12C6 cinit CODE >1634:C:\Users\Luca\AppData\Local\Temp\s480.
+12C8 cinit CODE >1635:C:\Users\Luca\AppData\Local\Temp\s480.
+12CA cinit CODE >1636:C:\Users\Luca\AppData\Local\Temp\s480.
+12CC cinit CODE >1642:C:\Users\Luca\AppData\Local\Temp\s480.
+12CC cinit CODE >1645:C:\Users\Luca\AppData\Local\Temp\s480.
+12CE cinit CODE >1646:C:\Users\Luca\AppData\Local\Temp\s480.
+12D0 cinit CODE >1647:C:\Users\Luca\AppData\Local\Temp\s480.
+12D2 cinit CODE >1648:C:\Users\Luca\AppData\Local\Temp\s480.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\OrologioDaPolso.X.production.obj
+__Hspace_0 10000 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Hspace_1 21 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\OrologioDaPolso.X.production.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Luca\AppData\Local\Temp\s480.obj
+__CFG_WPCFG$OFF 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+PL2 1120 0 CODE 0 text8 dist/default/production\OrologioDaPolso.X.production.obj
+PL4 113E 0 CODE 0 text8 dist/default/production\OrologioDaPolso.X.production.obj
+PL6 11CA 0 CODE 0 text7 dist/default/production\OrologioDaPolso.X.production.obj
+PL8 114A 0 CODE 0 text8 dist/default/production\OrologioDaPolso.X.production.obj
+_dp 11 0 COMRAM 1 bssCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+_dt 16 0 COMRAM 1 bssCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_DisplayRefresh FF0 0 CODE 0 text10 dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_SetCouples 11CA 0 CODE 0 text7 dist/default/production\OrologioDaPolso.X.production.obj
+__Lsmallconst F00 0 SMALLCONST 0 smallconst dist/default/production\OrologioDaPolso.X.production.obj
+_DPOn 1204 0 CODE 0 text16 dist/default/production\OrologioDaPolso.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Luca\AppData\Local\Temp\s480.obj
+_main FF0 0 CODE 0 text0 dist/default/production\OrologioDaPolso.X.production.obj
+start 0 0 CODE 0 init C:\Users\Luca\AppData\Local\Temp\s480.obj
+__size_of_DPOn 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_WDTEN$OFF 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+_DisplayController 11D8 0 CODE 0 text15 dist/default/production\OrologioDaPolso.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\OrologioDaPolso.X.production.obj
+__size_of_SetupPWM 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_SetPwm 12C0 0 CODE 0 text6 dist/default/production\OrologioDaPolso.X.production.obj
+__LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__accesstop 60 0 ABS 0 - C:\Users\Luca\AppData\Local\Temp\s480.obj
+intlevel0 0 0 CODE 0 text C:\Users\Luca\AppData\Local\Temp\s480.obj
+intlevel1 0 0 CODE 0 text C:\Users\Luca\AppData\Local\Temp\s480.obj
+intlevel2 0 0 CODE 0 text C:\Users\Luca\AppData\Local\Temp\s480.obj
+intlevel3 0 0 CODE 0 text C:\Users\Luca\AppData\Local\Temp\s480.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__size_of_SetupIOPins 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_RTCOSC$T1OSCREF 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+SetPwm@duty 1 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\OrologioDaPolso.X.production.obj
+_PSTR1CONbits FBF 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\OrologioDaPolso.X.production.obj
+_ANCON1 F49 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Luca\AppData\Local\Temp\s480.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Luca\AppData\Local\Temp\s480.obj
+_CCPR1L FBB 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+DPOff@dp_n 1 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\OrologioDaPolso.X.production.obj
+__Hpa_nodes0 0 0 ABS 0 pa_nodes0 dist/default/production\OrologioDaPolso.X.production.obj
+__size_of_unlock_RTCC 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+_Decode F01 0 SMALLCONST 0 smallconst dist/default/production\OrologioDaPolso.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\OrologioDaPolso.X.production.obj
+SetCouples@right 1 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+_SetupPWM 127A 0 CODE 0 text2 dist/default/production\OrologioDaPolso.X.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\OrologioDaPolso.X.production.obj
+__Hintcodelo 0 0 CODE 0 intcodelo dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_SetupPWM 12A0 0 CODE 0 text2 dist/default/production\OrologioDaPolso.X.production.obj
+__size_of_DPOff 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Lpa_nodes0 0 0 ABS 0 pa_nodes0 dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_GetDateTime 1120 0 CODE 0 text8 dist/default/production\OrologioDaPolso.X.production.obj
+__HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+start_initialization 12C0 0 CODE 0 cinit dist/default/production\OrologioDaPolso.X.production.obj
+_OSCCON FD3 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\OrologioDaPolso.X.production.obj
+___rparam_used 1 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+DisplayRefresh@dgt 2 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__end_ofPL2 113E 0 CODE 0 text8 dist/default/production\OrologioDaPolso.X.production.obj
+__end_ofPL4 114A 0 CODE 0 text8 dist/default/production\OrologioDaPolso.X.production.obj
+__end_ofPL6 11D8 0 CODE 0 text7 dist/default/production\OrologioDaPolso.X.production.obj
+__end_ofPL8 1156 0 CODE 0 text8 dist/default/production\OrologioDaPolso.X.production.obj
+_RPOR15 ED5 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+_RPOR16 ED6 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+_RPOR17 ED7 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+_RPOR18 ED8 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+_RTCCFG F3F 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+_SetPwm 12A0 0 CODE 0 text6 dist/default/production\OrologioDaPolso.X.production.obj
+__size_of_SetCouples 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+main@displaycounter C 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_WPDIS$OFF 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_T1DIG$OFF 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\OrologioDaPolso.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\OrologioDaPolso.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\OrologioDaPolso.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\OrologioDaPolso.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\OrologioDaPolso.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\OrologioDaPolso.X.production.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\OrologioDaPolso.X.production.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\OrologioDaPolso.X.production.obj
+__Hbank8 0 0 ABS 0 bank8 dist/default/production\OrologioDaPolso.X.production.obj
+__Hbank9 0 0 ABS 0 bank9 dist/default/production\OrologioDaPolso.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production\OrologioDaPolso.X.production.obj
+__Hconst 0 0 CONST 0 const dist/default/production\OrologioDaPolso.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production\OrologioDaPolso.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc dist/default/production\OrologioDaPolso.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\OrologioDaPolso.X.production.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\OrologioDaPolso.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\OrologioDaPolso.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production\OrologioDaPolso.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production\OrologioDaPolso.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production\OrologioDaPolso.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production\OrologioDaPolso.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production\OrologioDaPolso.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production\OrologioDaPolso.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production\OrologioDaPolso.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production\OrologioDaPolso.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production\OrologioDaPolso.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production\OrologioDaPolso.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_DSBOREN$ON 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Ljflash_buffer F800 0 CODE 0 jflash_buffer dist/default/production\OrologioDaPolso.X.production.obj
+__Hbank10 0 0 ABS 0 bank10 dist/default/production\OrologioDaPolso.X.production.obj
+__Hbank11 0 0 ABS 0 bank11 dist/default/production\OrologioDaPolso.X.production.obj
+__Hbank12 0 0 ABS 0 bank12 dist/default/production\OrologioDaPolso.X.production.obj
+__Hbank13 0 0 ABS 0 bank13 dist/default/production\OrologioDaPolso.X.production.obj
+__Hbank14 0 0 ABS 0 bank14 dist/default/production\OrologioDaPolso.X.production.obj
+_DigitController 1F 0 COMRAM 1 nvCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\OrologioDaPolso.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production\OrologioDaPolso.X.production.obj
+__smallconst F00 0 SMALLCONST 0 smallconst C:\Users\Luca\AppData\Local\Temp\s480.obj
+__size_of_SetupDigitController 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production\OrologioDaPolso.X.production.obj
+__Hconfig 10000 0 CONFIG 0 config dist/default/production\OrologioDaPolso.X.production.obj
+SetCouples@left 7 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+SetCouples@lx10 3 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+SetCouples@rx10 4 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+SetCouples@lx1 5 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+SetCouples@rx1 6 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\OrologioDaPolso.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\OrologioDaPolso.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\OrologioDaPolso.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\OrologioDaPolso.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\OrologioDaPolso.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\OrologioDaPolso.X.production.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\OrologioDaPolso.X.production.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\OrologioDaPolso.X.production.obj
+__Lbank8 0 0 ABS 0 bank8 dist/default/production\OrologioDaPolso.X.production.obj
+__Lbank9 0 0 ABS 0 bank9 dist/default/production\OrologioDaPolso.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production\OrologioDaPolso.X.production.obj
+__Lconst 0 0 CONST 0 const dist/default/production\OrologioDaPolso.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production\OrologioDaPolso.X.production.obj
+__Lidloc 0 0 IDLOC 0 idloc dist/default/production\OrologioDaPolso.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\OrologioDaPolso.X.production.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\OrologioDaPolso.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\OrologioDaPolso.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production\OrologioDaPolso.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\OrologioDaPolso.X.production.obj
+main@brightnessdelay A 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\OrologioDaPolso.X.production.obj
+_REFOCON F3D 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production\OrologioDaPolso.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production\OrologioDaPolso.X.production.obj
+__Hinit 4 0 CODE 0 init dist/default/production\OrologioDaPolso.X.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\OrologioDaPolso.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\OrologioDaPolso.X.production.obj
+__Htemp 0 0 COMRAM 1 temp dist/default/production\OrologioDaPolso.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production\OrologioDaPolso.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production\OrologioDaPolso.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production\OrologioDaPolso.X.production.obj
+__Linit 0 0 CODE 0 init dist/default/production\OrologioDaPolso.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\OrologioDaPolso.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\OrologioDaPolso.X.production.obj
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_SetupOutputPort 12EE 0 CODE 0 text3 dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+_SetupIOPins 12F8 0 CODE 0 text4 dist/default/production\OrologioDaPolso.X.production.obj
+__size_of_SetPwm 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_SetupDigitController 12F8 0 CODE 0 text5 dist/default/production\OrologioDaPolso.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production\OrologioDaPolso.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production\OrologioDaPolso.X.production.obj
+_PR2 FCB 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__S0 10000 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__S1 21 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__S2 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__size_of_DisplayRefresh 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Hjflash_buffer F800 0 CODE 0 jflash_buffer dist/default/production\OrologioDaPolso.X.production.obj
+DPOn@dp_n 1 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_OSC$INTOSC 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_DSWDTEN$ON 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__pnvCOMRAM 1D 0 COMRAM 1 nvCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_DSWDTPS$G2 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+_digit1 15 0 COMRAM 1 bssCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+_digit2 14 0 COMRAM 1 bssCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+_digit3 13 0 COMRAM 1 bssCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+_digit4 12 0 COMRAM 1 bssCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\OrologioDaPolso.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\OrologioDaPolso.X.production.obj
+_unlock_RTCC 12D6 0 CODE 0 text9 dist/default/production\OrologioDaPolso.X.production.obj
+__size_of_GetDateTime 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_WPEND$PAGE_WPFP 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+_PPSCONbits EFF 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Hramtop F00 0 RAM 0 ramtop dist/default/production\OrologioDaPolso.X.production.obj
+_RTCCFGbits F3F 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\OrologioDaPolso.X.production.obj
+SetupDigitController@controller 1 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\OrologioDaPolso.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production\OrologioDaPolso.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production\OrologioDaPolso.X.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production\OrologioDaPolso.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production\OrologioDaPolso.X.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production\OrologioDaPolso.X.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production\OrologioDaPolso.X.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production\OrologioDaPolso.X.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production\OrologioDaPolso.X.production.obj
+__Htext18 0 0 ABS 0 text18 dist/default/production\OrologioDaPolso.X.production.obj
+_SetupOutputPort 12E4 0 CODE 0 text3 dist/default/production\OrologioDaPolso.X.production.obj
+_RTCVALH F99 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+_RTCVALL F98 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+_RTCWREN 79FD 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_SetupRTCC 127A 0 CODE 0 text1 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext10 F12 0 CODE 0 text10 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext11 1300 0 CODE 0 text11 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext12 1304 0 CODE 0 text12 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext13 1308 0 CODE 0 text13 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext14 130C 0 CODE 0 text14 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext15 11D8 0 CODE 0 text15 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext16 1204 0 CODE 0 text16 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext17 122C 0 CODE 0 text17 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext18 0 0 CODE 0 text18 dist/default/production\OrologioDaPolso.X.production.obj
+__size_of_SetupRTCC 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Lbank10 0 0 ABS 0 bank10 dist/default/production\OrologioDaPolso.X.production.obj
+__Lbank11 0 0 ABS 0 bank11 dist/default/production\OrologioDaPolso.X.production.obj
+__Lbank12 0 0 ABS 0 bank12 dist/default/production\OrologioDaPolso.X.production.obj
+__Lbank13 0 0 ABS 0 bank13 dist/default/production\OrologioDaPolso.X.production.obj
+__Lbank14 0 0 ABS 0 bank14 dist/default/production\OrologioDaPolso.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\OrologioDaPolso.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_MSSP7B_EN$MSK7 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production\OrologioDaPolso.X.production.obj
+__Lconfig FFF8 0 CONFIG 0 config dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_WPFP$PAGE_63 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\OrologioDaPolso.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\OrologioDaPolso.X.production.obj
+GetDateTime@pdt 1 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+_SetupRTCC 1254 0 CODE 0 text1 dist/default/production\OrologioDaPolso.X.production.obj
+stackhi EBF 0 ABS 0 - C:\Users\Luca\AppData\Local\Temp\s480.obj
+stacklo 60 0 ABS 0 - C:\Users\Luca\AppData\Local\Temp\s480.obj
+__Lintcode 0 0 CODE 0 intcode dist/default/production\OrologioDaPolso.X.production.obj
+_OSCTUNE F9B 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production\OrologioDaPolso.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production\OrologioDaPolso.X.production.obj
+__size_of_DisplayController 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+main@bright E 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_GetDigit1 1310 0 CODE 0 text14 dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_GetDigit2 130C 0 CODE 0 text13 dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_GetDigit3 1308 0 CODE 0 text12 dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_GetDigit4 1304 0 CODE 0 text11 dist/default/production\OrologioDaPolso.X.production.obj
+DisplayController@digits 1 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__pbssCOMRAM 10 0 COMRAM 1 bssCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__size_of_GetDigit1 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__size_of_GetDigit2 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__size_of_GetDigit3 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__size_of_GetDigit4 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_DSWDTOSC$INTOSCREF 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+SetCouples@pDecode 8 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+end_of_initialization 12CC 0 CODE 0 cinit dist/default/production\OrologioDaPolso.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\OrologioDaPolso.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+_PSTR1CON FBF 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Hreset_vec 0 0 CODE 0 reset_vec dist/default/production\OrologioDaPolso.X.production.obj
+_GetDigit1 130C 0 CODE 0 text14 dist/default/production\OrologioDaPolso.X.production.obj
+_GetDigit2 1308 0 CODE 0 text13 dist/default/production\OrologioDaPolso.X.production.obj
+_GetDigit3 1304 0 CODE 0 text12 dist/default/production\OrologioDaPolso.X.production.obj
+_GetDigit4 1300 0 CODE 0 text11 dist/default/production\OrologioDaPolso.X.production.obj
+__Lramtop F00 0 RAM 0 ramtop dist/default/production\OrologioDaPolso.X.production.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\OrologioDaPolso.X.production.obj
+__pcinit 12C0 0 CODE 0 cinit dist/default/production\OrologioDaPolso.X.production.obj
+__size_of_SetupOutputPort 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__ptext0 FF0 0 CODE 0 text0 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext1 1254 0 CODE 0 text1 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext2 127A 0 CODE 0 text2 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext3 12E4 0 CODE 0 text3 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext4 12F8 0 CODE 0 text4 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext5 12EE 0 CODE 0 text5 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext6 12A0 0 CODE 0 text6 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext7 1156 0 CODE 0 text7 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext8 10C4 0 CODE 0 text8 dist/default/production\OrologioDaPolso.X.production.obj
+__ptext9 12D6 0 CODE 0 text9 dist/default/production\OrologioDaPolso.X.production.obj
+SetupOutputPort@port 1 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production\OrologioDaPolso.X.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/production\OrologioDaPolso.X.production.obj
+__ramtop F00 0 RAM 0 ramtop C:\Users\Luca\AppData\Local\Temp\s480.obj
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\OrologioDaPolso.X.production.obj
+__psmallconst F00 0 SMALLCONST 0 smallconst dist/default/production\OrologioDaPolso.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\OrologioDaPolso.X.production.obj
+_PADCFG1 F3C 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+___param_bank 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\OrologioDaPolso.X.production.obj
+__end_of__initialization 12CC 0 CODE 0 cinit dist/default/production\OrologioDaPolso.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\OrologioDaPolso.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_SetupIOPins 1300 0 CODE 0 text4 dist/default/production\OrologioDaPolso.X.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+_GetDateTime 10C4 0 CODE 0 text8 dist/default/production\OrologioDaPolso.X.production.obj
+_SetupDigitController 12EE 0 CODE 0 text5 dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_DPOn 122C 0 CODE 0 text16 dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_main 10C4 0 CODE 0 text0 dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_DPOff 1254 0 CODE 0 text17 dist/default/production\OrologioDaPolso.X.production.obj
+_DPOff 122C 0 CODE 0 text17 dist/default/production\OrologioDaPolso.X.production.obj
+_PORTB F81 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+_PORTC F82 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+_T1CON FCD 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+_T2CON FCA 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+_TRISC F94 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_DisplayController 1204 0 CODE 0 text15 dist/default/production\OrologioDaPolso.X.production.obj
+_SetCouples 1156 0 CODE 0 text7 dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__CFG_IOL1WAY$ON 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production\OrologioDaPolso.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production\OrologioDaPolso.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production\OrologioDaPolso.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production\OrologioDaPolso.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production\OrologioDaPolso.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production\OrologioDaPolso.X.production.obj
+_digit 10 0 COMRAM 1 bssCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+_pPort 1D 0 COMRAM 1 nvCOMRAM dist/default/production\OrologioDaPolso.X.production.obj
+_DisplayRefresh F12 0 CODE 0 text10 dist/default/production\OrologioDaPolso.X.production.obj
+_CCP1CON FBA 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_unlock_RTCC 12E4 0 CODE 0 text9 dist/default/production\OrologioDaPolso.X.production.obj
+__initialization 12C0 0 CODE 0 cinit dist/default/production\OrologioDaPolso.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\OrologioDaPolso.X.production.obj
+__Hsmallconst F12 0 SMALLCONST 0 smallconst dist/default/production\OrologioDaPolso.X.production.obj
+__end_of_Decode F11 0 SMALLCONST 0 smallconst dist/default/production\OrologioDaPolso.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\OrologioDaPolso.X.production.obj
+_CCP1CONbits FBA 0 ABS 0 - dist/default/production\OrologioDaPolso.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\OrologioDaPolso.X.production.obj
+__Hintcode 0 0 CODE 0 intcode dist/default/production\OrologioDaPolso.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text10 0 F12 F12 3FE 1
+cstackCOMRAM 1 1 1 20 1
+reset_vec 0 0 0 4 1
+smallconst 0 F00 F00 12 1
+config 0 FFF8 FFF8 8 1
